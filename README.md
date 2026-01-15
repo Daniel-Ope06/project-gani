@@ -16,7 +16,7 @@ This project implements a **Hardware-in-the-Loop** (HIL) simulation architecture
 
 - **The Bridge (UDP):** A low-latency socket protocol that transmits video frames and receives velocity commands in real-time.
 
-```{mermaid}
+```mermaid
 graph LR
     A[Godot Simulation] -- Video Feed (UDP) --> B(Python CV Core)
     B -- Velocity Commands (UDP) --> A
